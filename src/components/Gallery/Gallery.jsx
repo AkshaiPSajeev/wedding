@@ -5,15 +5,15 @@ const Gallery = () => {
     const arr=[1,2,3,4,5,6,7,8,9,1,1,1]
   return (
     <>
-    <div className='bg-white  rounded-md pt-4 pl-16 pr-10 '>
+    <div className='bg-white  rounded-md pt-4 pl-16 pr-10 mt-10 pb-10'>
         <h2 className='major-headings'>Gallery</h2>
         {/* <Nav/> */}
-        <div className='flex  bg-gray-100  mt-4 pl-8 pt-4 pb-4 rounded-md justify-between'>
+        <div className='flex  bg-gray-100  mt-4 pl-8 pt-5 pb-3 rounded-md justify-between'>
             <div className='flex '>
-            <div><span className='text-xl'>Mehndi</span></div>
-            <div className='ml-16'><span className=' text-xl'>All</span></div>
-            <div className='ml-16'><span className='text-xl'>Haldi</span></div>
-            <div className='ml-16'><span className='text-xl'>Carnival</span></div>
+            <div><span className='text-[12pt] font-semibold text-gray-700 '>Mehndi</span></div>
+            <div className='ml-16'><span className=' text-[12pt] text-gray-700 font-semibold'>All</span></div>
+            <div className='ml-16'><span className='text-[12pt] font-semibold text-gray-700 '>Haldi</span></div>
+            <div className='ml-16'><span className='text-[12pt] font-semibold text-gray-700 '>Carnival</span></div>
             </div>
         
             <div className='mr-7 text-red-400 text-xl font-semibold'>Feed</div>
