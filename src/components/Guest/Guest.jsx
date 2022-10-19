@@ -1,16 +1,18 @@
 import React from 'react'
 import {TiTick} from 'react-icons/ti'
 import { IoMdClose } from "react-icons/io"; 
+import {useSelector} from 'react-redux'
 const   Guest = () => {
+    const{dark}=useSelector((store)=>store.dark);
   return (
     <>
-    <div className='bg-white  rounded-md pt-4 pl-16 pr-10 mt-10 pb-20'>
+    <div className={`rounded-md pt-4 pl-16 pr-10 mt-10 pb-20 ${dark?'bg-black':'bg-white'}`}>
     <div>
-            <h2 className='major-headings'>Guest</h2>
+            <h2 className={`major-headings ${dark&&'text-white'}`}>Guest</h2>
         </div>
         
 <div class="overflow-x-auto relative mt-4">
-    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 rounded-md">
         <thead class="text-[11pt] text-gray-700  bg-gray-100  dark:bg-gray-700 dark:text-gray-400 pt-4 pb-4">
             <tr>
                 <th scope="col" class="py-3 px-6">

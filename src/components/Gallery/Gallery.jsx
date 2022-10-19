@@ -1,12 +1,14 @@
 import React from 'react'
 import Nav from '../Nav/Nav'
-
+import {useSelector} from 'react-redux'
 const Gallery = () => {
-    const arr=[1,2,3,4,5,6,7,8,9,1,1,1]
+    const arr=[1,2,3,4,5,6,7,8,9,1,1,1];
+    const{dark}=useSelector((store)=>store.dark);
+
   return (
     <>
-    <div className='bg-white  rounded-md pt-4 pl-16 pr-10 mt-10 pb-10'>
-        <h2 className='major-headings'>Gallery</h2>
+    <div className={` rounded-md pt-4 pl-16 pr-10 mt-10 pb-10  ${dark?'bg-black':'bg-white'}`}>
+        <h2 className={`${dark?'text-white text-[28px] font-semibold ':'major-headings'}`}>Gallery</h2>
         {/* <Nav/> */}
         <div className='flex  bg-gray-100  mt-4 pl-8 pt-5 pb-3 rounded-md justify-between'>
             <div className='flex '>

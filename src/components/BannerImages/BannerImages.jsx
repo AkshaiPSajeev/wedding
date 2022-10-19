@@ -1,15 +1,15 @@
 import React from 'react'
-// BiPlus
+import {useSelector} from 'react-redux'
 import {BiPlus} from 'react-icons/bi'
 const BannerImages = () => {
     let arr=[1,2,3,4,5,6,7,8];
-    
+    const{dark}=useSelector((store)=>store.dark);
   return (
     <>
-    <div className='bg-white  rounded-md mt-4 pl-8 pt-8  pb-8 mr-10'>
+    <div className={`${dark?'bg-black':'bg-white '} rounded-md mt-4 pl-8 pt-8  pb-8 mr-10`}>
         <div className='flex'>
             <div>
-                <h2 className='major-headings'>Banner Images</h2>
+                <h2 className={`major-headings ${dark&&'text-white'}`}>Banner Images</h2>
             </div>
             <div className='mt-2 ml-2'>
                 <button className='wed-btn border text-sm'>+ upload</button>
