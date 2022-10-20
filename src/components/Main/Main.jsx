@@ -9,7 +9,7 @@ const Main = () => {
   const{dark}=useSelector((store)=>store.dark);
   return (
     <>
-    <div className={`flex  pl-8 pr-10 pt-11 ${dark?'bg-slate-800':'bg-gray-100'}`} >
+    <div className={`flex  pl-8 pr-10 pt-1 ${dark?'bg-slate-800':'bg-gray-100'}`} >
         <div className='flex flex-col md:w-[80%]'> 
         
         <Details/>
